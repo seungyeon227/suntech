@@ -1,0 +1,27 @@
+body {
+  color: #111;
+  font: {
+    family: "Pretendard Variable", sans-serif;
+    size: 18px;
+    weight: normal;
+  }
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+}
+
+.point {
+  color: #F70;
+}
+
+.container {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
