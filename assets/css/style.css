@@ -104,7 +104,6 @@ button, input, select {
   left: 0;
   width: 100%;
   height: 80px;
-  background: rgba(0, 0, 0, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,6 +114,9 @@ button, input, select {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 40px;
+  background: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 #header .logo_wrap .logo {
   width: 178px;
@@ -149,6 +151,9 @@ button, input, select {
           align-items: center;
   gap: 40px;
 }
+#header .nav_right .lang_color {
+  display: none;
+}
 #header .lang_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,6 +187,34 @@ button, input, select {
   width: 60px;
   height: 4px;
   background: #fff;
+}
+
+#header.active {
+  background: #fff;
+}
+#header.active .logo_white {
+  display: none;
+}
+#header.active .logo_navy {
+  display: block;
+}
+#header.active .nav_list .item {
+  color: #141414;
+}
+#header.active .nav_right .lang_wrap {
+  background: rgba(0, 0, 0, 0.05);
+}
+#header.active .nav_right .lang_wrap .lang {
+  color: #141414;
+}
+#header.active .nav_right .lang_color {
+  display: block;
+}
+#header.active .nav_right .lang_white {
+  display: none;
+}
+#header.active .all_menu .bar {
+  background: #141414;
 }
 
 #footer {
